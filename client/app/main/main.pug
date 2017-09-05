@@ -1,13 +1,13 @@
 header#banner.hero-unit
   .container
-    h1 'Allo, 'Allo!
-    p.lead Kick-start your next web app with Angular Fullstack
-    img(src='assets/images/yeoman.png', alt='I\'m Yeoman')
+    h1 Hermota Meals!
+    p.lead Get custom great food for your personal needs 
+    //- img(src='assets/images/yeoman.png', alt='I\'m Yeoman')
 
 .container
   .row
     .col-lg-12
-      h1.page-header Features:
+      h1.page-header Your Custom Meal Search:
       ul.nav.nav-tabs.nav-stacked.col-md-4.col-lg-4.col-sm-6(ng-repeat='thing in $ctrl.awesomeThings')
         li
           a(href='#', uib-tooltip='{{thing.info}}')
@@ -15,8 +15,8 @@ header#banner.hero-unit
             button.close(type='button', ng-click='$ctrl.deleteThing(thing)') &times;
 
   form.thing-form
-    label Syncs in realtime across clients
+    label What would you like on your plate!
     p.input-group
-      input.form-control(type='text', placeholder='Add a new thing here.', ng-model='$ctrl.newThing')
+      input.form-control(type='text', placeholder='Add a food here.', ng-model='$ctrl.newThing')
       span.input-group-btn
         button.btn.btn-primary(type='submit', ng-click='$ctrl.addThing()') Add New
